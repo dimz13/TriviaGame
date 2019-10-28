@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+    <script src="assets/js/trivia.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Trivia Game</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="jumbotron" style="text-align:center">
+            <h1 class="display-4" >Trivia Game</h1>
+            <p class="lead">Welcome to try out a bit of geography trivia</p>
+            <hr class="my-4">
+            <p>You have 60 secs to answer 15 questions.Make a selection by checking the radio button </p>
+            <a id ="play" class="btn btn-primary btn-lg" href="#" role="button">Play</a>
+          </div>
+          <div class="container-fluid question-container"> 
+
+              <button type="button" class="btn btn-primary badge-info" id="timer">
+                  Time Remaining <span class="badge ">0</span>
+                  <span class="sr-only">unread messages</span>
+                </button>
+                <div class="main-qacontent">
+              <h4 class="question">1. Magyars are the people of which country?</h4>
+              
+              <form class="answers">
+                    <input type="radio" name="choice"  value="wrong" ><label>Slovakia</label>
+                    <input type="radio" name="choice"  value="wrong"><label>Romania</label>  
+                    <input type="radio" name="choice"  value="wrong"><label>Moldova</label> 
+                    <input type="radio" name="choice"  value="correct"><label>Hungary</label>  
+              </form>
+              <br>
+              <h4 class="question">2. Pilbara is a region in which Australian state?</h4>
+              <form class="answers">
+                    <input type="radio" name="choice"  value="correct">Western Australia
+                    <input type="radio" name="choice"  value="wrong"> Queensland  
+                    <input type="radio" name="choice"  value="wrong"> New South Wales 
+                    <input type="radio" name="choice"  value="wrong"> Tasmania  
+              </form>
+              <br>
+              <h4 class="question">3. What is the capital of Armenia?</h4>
+              <form class="answers">
+                    <input type="radio" name="choice"  value="wrong"> Bataysk
+                    <input type="radio" name="choice"  value="wrong"> Baku  
+                    <input type="radio" name="choice"  value="correct"> Yerevan 
+                    <input type="radio" name="choice"  value="wrong"> Tbilisi  
+              </form>
+              <br>
+              <h4 class="question">4. The Chukchi Sea is north of which sea?</h4>
+              <form class="answers">
+                    <input type="radio" name="choice"  value="wrong"> White Sea
+                    <input type="radio" name="choice"  value="correct"> Bering Sea  
+                    <input type="radio" name="choice"  value="wrong"> Norwegian Sea 
+                    <input type="radio" name="choice"  value="wrong"> Beaufort Sea  
+              </form>
+              <br>
+              <h4 class="question">5.Where is the Levantine Basin found?</h4>
+              <form class="answers">
+                    <input type="radio" name="choice"  value="wrong"> North Pacific Ocean
+                    <input type="radio" name="choice"  value="correct"> Mediterranean Sea  
+                    <input type="radio" name="choice"  value="wrong"> Arctic Ocean 
+                    <input type="radio" name="choice"  value="wrong"> South Atlantic Ocean  
+              </form>
+              <br>
+              <h4 class="question">6. The Chalbi Desert and Cherangany Hills are found in which country?</h4>
+              <form class="answers">
+                    <input type="radio" name="choice"  value="wrong"> Democratic Republic of the Congo
+                    <input type="radio" name="choice"  value="wrong"> Tanzania  
+                    <input type="radio" name="choice"  value="wrong"> SouthSudan 
+                    <input type="radio" name="choice"  value="correct"> Kenya  
+              </form>
+              <br>
+              <h4 class="question">7. Which country occupies most of Cisjordan?</h4>
+              <form class="answers">
+                    <input type="radio" name="choice"  value="wrong"> Jordan
+                    <input type="radio" name="choice"  value="wrong"> Turkey  
+                    <input type="radio" name="choice"  value="wrong"> Egypt 
+                    <input type="radio" name="choice"  value="correct"> Israel  
+              </form>
+              <br>
+              <h4 class="question">8. The Baikonur Cosmodrome, Russia's main space launch facility, is located in which country?</h4>
+              <form class="answers">
+                    <input type="radio" name="choice"  value="correct"> Kazakhstan
+                    <input type="radio" name="choice"  value="wrong"> Kyrgyzstan  
+                    <input type="radio" name="choice"  value="wrong"> Turkmenistan 
+                    <input type="radio" name="choice"  value="wrong"> Uzbekistan  
+              </form>
+              <br>
+              <h4 class="question">9. Lebanon gained independence from which country in 1943?</h4>
+              <form class="answers">
+                    <input type="radio" name="choice"  value="wrong"> Spain
+                    <input type="radio" name="choice"  value="correct"> France  
+                    <input type="radio" name="choice"  value="wrong"> Germany 
+                    <input type="radio" name="choice"  value="wrong"> United Kingdom  
+              </form>
+              <br>
+              <h4 class="question">10. The TauTona Gold Mine is the world's deepest mine; in which country can it be found?</h4>
+              <form class="answers">
+                    <input type="radio" name="choice"  value="correct"> South Africa
+                    <input type="radio" name="choice"  value="wrong"> Uganda  
+                    <input type="radio" name="choice"  value="wrong"> Bolivia 
+                    <input type="radio" name="choice"  value="wrong"> Brazil  
+              </form>
+              <br>
+              <h4 class="question">11. Rarotonga is an island of which country?</h4>
+              <form class="answers">
+                    <input type="radio" name="choice"  value="wrong"> Fiji
+                    <input type="radio" name="choice"  value="wrong"> Tonga  
+                    <input type="radio" name="choice"  value="wrong"> United States 
+                    <input type="radio" name="choice"  value="correct"> New Zealand  
+              </form>
+              <br>
+              <h4 class="question">12. The Isles of Scilly are an archipelago off the tip of which cape?</h4>
+              <form class="answers">
+                    <input type="radio" name="choice"  value="wrong"> Cape Coral
+                    <input type="radio" name="choice"  value="correct"> Cape Cornwall  
+                    <input type="radio" name="choice"  value="wrong"> Cape Canaveral 
+                    <input type="radio" name="choice"  value="wrong"> Cape Horn  
+              </form>
+              <br>
+              <h4 class="question">13. Within which country can two other independent countries be found?</h4>
+              <form class="answers">
+                    <input type="radio" name="choice"  value="wrong"> South Africa
+                    <input type="radio" name="choice"  value="wrong"> Russia  
+                    <input type="radio" name="choice"  value="correct"> Italy
+                    <input type="radio" name="choice"  value="wrong"> Canada 
+              </form>
+              <br>
+              <h4 class="question">14. The Electoral Palatinate was a historic region along which river?</h4>
+              <form class="answers">
+                    <input type="radio" name="choice"  value="wrong"> Ural
+                    <input type="radio" name="choice"  value="correct"> Rhine  
+                    <input type="radio" name="choice"  value="wrong"> Danube
+                    <input type="radio" name="choice"  value="wrong"> Dneiper 
+              </form>
+              <br>
+              <h4 class="question">15. What is the longest river in South America?</h4>
+              <form class="answers">
+                    <input type="radio" name="choice"  value="wrong"> Araguaia
+                    <input type="radio" name="choice"  value="wrong"> Madeira  
+                    <input type="radio" name="choice"  value="correct"> Amazon
+                    <input type="radio" name="choice"  value="wrong"> Parana 
+              </form>
+              <br>
+            </div>
+              <div style="text-align:center">
+                  <p class="lead btn btn-lg" style="background-color: orange" id="submit">Done
+                  </p>
+              </div>
+              
+      </div>
+      <div class="results">
+          <h3 class="stats" id="summary" style="color:royalblue;font-size:50px"> Your Final Numbers....</h3> 
+          <p class="stats" id="correctAns" style="font-weight:bold;color:teal;font-size:35px"></p>
+          <p class="stats" id="wrongAns" style="font-weight:bold;color:purple;font-size:25px;"></p>
+          <p class="stats" id="unanswered" style="font-weight:bold;color:sienna;font-size:20px"></p>
+      </div>
+    </div>
+    
+    
+    
+    <script>
+ triviaPlay();
+
+ 
+    </script>
+</body>
+</html>
